@@ -20,3 +20,8 @@ jobs:
     steps:
       - name: Check PR Description and Target
         uses: naveen-k-u-n/actions-py@develop
+        with:
+          pr_number: ${{ github.event.number }}
+          pr_description: ${{ !github.event.pull_request.body }}
+          repo: ${{ github.repository }}
+          owner: ${{ github.repository_owner }}        
