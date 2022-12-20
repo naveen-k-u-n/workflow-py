@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Merge and close PR
-        uses: imp-ress-ico/github-actions@devops/DdekPD5c/1250
+        uses: naveen-k-u-n/actions-py@develop
         with:
           pr_number: ${{ github.event.issue.number }} 
           merge_pr: ${{ github.event.comment.body == '/Approved' }}
