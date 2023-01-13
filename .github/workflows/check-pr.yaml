@@ -24,4 +24,5 @@ jobs:
           pr_number: ${{ github.event.number }}
           pr_description: ${{ !github.event.pull_request.body }}
           repo: ${{ github.repository }}
-          owner: ${{ github.repository_owner }}        
+          owner: ${{ github.repository_owner }}
+          path: ~/.local/share/virtualenvs     
